@@ -53,7 +53,7 @@ class TwitterSentimentAnalyzer:
 
         return average_sentiment
     
-load_dotenv('/home/louis/btc-bot/env/.env')
+load_dotenv('PATH_TO_.ENV_FILE')
 api_key = os.getenv('TWITTER_API_KEY')
 api_secret_key = os.getenv('TWITTER_API_SECRET')
 access_token = os.getenv('TWITTER_ACCESS_TOKEN_KEY')
