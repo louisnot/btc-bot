@@ -15,7 +15,7 @@ class BinanceClient:
     def __new__(cls):
         if cls._instance is None:
             cls._instance = super(BinanceClient, cls).__new__(cls)
-            load_dotenv('/home/louis/btc-bot/env/.env')
+            load_dotenv('PATH_TO_.ENV_FILE')
             api_key = os.getenv("BINANCE_TESTNET_API_KEY")
             api_secret = os.getenv("BINANCE_TESTNET_API_SECRET")
             # Configure ccxt for Binance Futures Testnet
